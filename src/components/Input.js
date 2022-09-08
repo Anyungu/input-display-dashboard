@@ -6,7 +6,12 @@ function Input() {
   const [inputThree, setInputThree] = useState("");
 
   function handleInputOneChange(e) {
-    setInputOne(e.target.value);
+    const re = /^[A-Za-z]+$/;
+
+    // if value is not blank, then test the regex
+    if (e.target.value === '' || re.test(e.target.value)) {
+       setInputOne(e.target.value)
+    }
   }
 
   function handleInputTwoChange(e) {    
@@ -19,13 +24,13 @@ function Input() {
   }
 
   function handleInputThreeChange(e) {
-    setInputThree(e.target.value);
-  }
+    const re = /^[A-Za-z]+$/;
 
-  // function alphaOnly(event) {
-  //   var key = event.keyCode;
-  //   return ((key >= 65 && key <= 90) || key === 8);
-  // };
+    // if value is not blank, then test the regex
+    if (e.target.value === '' || re.test(e.target.value)) {
+       setInputThree(e.target.value)
+    }
+  }
 
   return (
     <div>
