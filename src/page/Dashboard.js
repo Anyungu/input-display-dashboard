@@ -3,10 +3,13 @@ import Display from "../components/Display";
 import Input from "../components/Input";
 
 function Dashboard() {
+    
+  // Input state
   const [inputOne, setInputOne] = useState("");
   const [inputTwo, setInputTwo] = useState("");
   const [inputThree, setInputThree] = useState("");
 
+  // Handle input one change
   function handleInputOneChange(e) {
     const re = /^[A-Za-z]+$/;
 
@@ -16,6 +19,7 @@ function Dashboard() {
     }
   }
 
+  // Handle input two change
   function handleInputTwoChange(e) {
     const re = /^[0-9\b]+$/;
 
@@ -25,6 +29,7 @@ function Dashboard() {
     }
   }
 
+  // Handle input three change
   function handleInputThreeChange(e) {
     const re = /^[A-Za-z]+$/;
 
@@ -34,6 +39,7 @@ function Dashboard() {
     }
   }
 
+  // Display the child components:- Input and Display
   return (
     <div className="">
       <div className="border-2 bg-white border-black h-3/4 w-3/6 mx-auto mt-20 justify-between">

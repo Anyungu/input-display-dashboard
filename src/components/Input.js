@@ -2,7 +2,7 @@ import React from "react";
 
 function Input({inputOne, inputTwo, inputThree, handleInputOneChange, handleInputTwoChange, handleInputThreeChange}) {
 
-
+  // Inputs
   return (
     <div className="m-4 mt-12 ml-10">
       <div>
