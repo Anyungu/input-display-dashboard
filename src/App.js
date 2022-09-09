@@ -1,12 +1,11 @@
 import React from "react";
-import Display from "./components/Display";
-// import Input from "./components/Input";
+import Dashboard from "./page/Dashboard";
 
 function App() {
   
   return (
     <div>
-      <Display />
+      <Dashboard />
     </div>
   );
 }

@@ -33,11 +33,11 @@ function Input() {
   }
 
   return (
-    <div className="m-10">
+    <div className="m-4 mt-12 ml-10">
       <div>
         <input
           type="text"
-          className="border-2 border-black h-10 mt-4 mb-6"
+          className="border-2 border-black h-10 mb-12"
           value={inputOne}
           onChange={handleInputOneChange}
         />
@@ -46,7 +46,7 @@ function Input() {
       <div>
         <input
           type="text"
-          className="border-2 border-black h-10 mb-6"
+          className="border-2 border-black h-10 mb-12"
           value={inputTwo}
           onChange={handleInputTwoChange}
         />
