@@ -1,11 +1,12 @@
 import React from "react";
-import Input from "./components/Input";
+import Display from "./components/Display";
+// import Input from "./components/Input";
 
 function App() {
   
   return (
     <div>
-      <Input />
+      <Display />
     </div>
   );
 }

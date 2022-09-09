@@ -9,17 +9,17 @@ function Input() {
     const re = /^[A-Za-z]+$/;
 
     // if value is not blank, then test the regex
-    if (e.target.value === '' || re.test(e.target.value)) {
-       setInputOne(e.target.value)
+    if (e.target.value === "" || re.test(e.target.value)) {
+      setInputOne(e.target.value);
     }
   }
 
-  function handleInputTwoChange(e) {    
+  function handleInputTwoChange(e) {
     const re = /^[0-9\b]+$/;
 
     // if value is not blank, then test the regex
-    if (e.target.value === '' || re.test(e.target.value)) {
-       setInputTwo(e.target.value)
+    if (e.target.value === "" || re.test(e.target.value)) {
+      setInputTwo(e.target.value);
     }
   }
 
@@ -27,17 +27,17 @@ function Input() {
     const re = /^[A-Za-z]+$/;
 
     // if value is not blank, then test the regex
-    if (e.target.value === '' || re.test(e.target.value)) {
-       setInputThree(e.target.value)
+    if (e.target.value === "" || re.test(e.target.value)) {
+      setInputThree(e.target.value);
     }
   }
 
   return (
-    <div>
+    <div className="m-10">
       <div>
         <input
           type="text"
-          className="border-2"
+          className="border-2 border-black h-10 mt-4 mb-6"
           value={inputOne}
           onChange={handleInputOneChange}
         />
@@ -46,7 +46,7 @@ function Input() {
       <div>
         <input
           type="text"
-          className="border-2"
+          className="border-2 border-black h-10 mb-6"
           value={inputTwo}
           onChange={handleInputTwoChange}
         />
@@ -55,7 +55,7 @@ function Input() {
       <div>
         <input
           type="text"
-          className="border-2"
+          className="border-2 border-black h-10"
           value={inputThree}
           onChange={handleInputThreeChange}
         />
