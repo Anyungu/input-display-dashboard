@@ -1,36 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Input() {
-  const [inputOne, setInputOne] = useState("");
-  const [inputTwo, setInputTwo] = useState("");
-  const [inputThree, setInputThree] = useState("");
+function Input({inputOne, inputTwo, inputThree, handleInputOneChange, handleInputTwoChange, handleInputThreeChange}) {
 
-  function handleInputOneChange(e) {
-    const re = /^[A-Za-z]+$/;
-
-    // if value is not blank, then test the regex
-    if (e.target.value === "" || re.test(e.target.value)) {
-      setInputOne(e.target.value);
-    }
-  }
-
-  function handleInputTwoChange(e) {
-    const re = /^[0-9\b]+$/;
-
-    // if value is not blank, then test the regex
-    if (e.target.value === "" || re.test(e.target.value)) {
-      setInputTwo(e.target.value);
-    }
-  }
-
-  function handleInputThreeChange(e) {
-    const re = /^[A-Za-z]+$/;
-
-    // if value is not blank, then test the regex
-    if (e.target.value === "" || re.test(e.target.value)) {
-      setInputThree(e.target.value);
-    }
-  }
 
   return (
     <div className="m-4 mt-12 ml-10">
