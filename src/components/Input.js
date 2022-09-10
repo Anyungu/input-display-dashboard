@@ -4,11 +4,11 @@ function Input({inputOne, inputTwo, inputThree, handleInputOneChange, handleInpu
 
   // Inputs
   return (
-    <div className="m-4 mt-12 ml-10">
+    <div className="m-4 mt-10 ml-10">
       <div>
         <input
           type="text"
-          className="border-2 border-black h-10 mb-12"
+          className="border-2 border-blue-400 rounded-lg h-12 mb-10 outline-blue-600"
           value={inputOne}
           onChange={handleInputOneChange}
         />
@@ -17,7 +17,7 @@ function Input({inputOne, inputTwo, inputThree, handleInputOneChange, handleInpu
       <div>
         <input
           type="text"
-          className="border-2 border-black h-10 mb-12"
+          className="border-2 border-blue-400 rounded-lg h-12 mb-10 outline-blue-600"
           value={inputTwo}
           onChange={handleInputTwoChange}
         />
@@ -26,7 +26,7 @@ function Input({inputOne, inputTwo, inputThree, handleInputOneChange, handleInpu
       <div>
         <input
           type="text"
-          className="border-2 border-black h-10"
+          className="border-2 border-blue-400 rounded-lg h-12 outline-blue-600"
           value={inputThree}
           onChange={handleInputThreeChange}
         />

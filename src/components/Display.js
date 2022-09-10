@@ -14,9 +14,9 @@ function Display({inputOne, inputTwo, inputThree}) {
   // Display the inputs as they change
   return (
     <div className="mr-10">
-      <div className="border-2 border-black rounded-lg m-4 h-20 w-44">{reverseInput(inputThree)}</div>
-      <div className="border-2 border-black rounded-lg m-4 h-20 w-44">{reverseInput(inputTwo)}</div>
-      <div className="border-2 border-black rounded-lg m-4 h-20 w-44">{reverseInput(inputOne)}</div>
+      <div className="border-2 border-emerald-400 rounded-lg bg-white m-4 h-20 w-44">{reverseInput(inputThree)}</div>
+      <div className="border-2 border-emerald-400 rounded-lg bg-white m-4 h-20 w-44">{reverseInput(inputTwo)}</div>
+      <div className="border-2 border-emerald-400 rounded-lg bg-white m-4 h-20 w-44">{reverseInput(inputOne)}</div>
     </div>
   );
 }

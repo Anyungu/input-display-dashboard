@@ -41,9 +41,9 @@ function Dashboard() {
 
   // Display the child components:- Input and Display
   return (
-    <div className="">
-      <div className="border-2 bg-white border-black h-3/4 w-3/6 mx-auto mt-20 justify-between">
-        <div className="text-center text-3xl my-2">
+    <div>
+      <div className="border-2 bg-gray-300 border-slate-500 rounded-lg h-3/4 w-3/6 mx-auto mt-20 justify-between">
+        <div className="text-center text-3xl my-2 text-blue-500">
           <h3>Input Display Dashboard</h3>
         </div>
         <div className="flex justify-between p-4">
