@@ -3,10 +3,10 @@ import React from "react";
 function Display({inputOne, inputTwo, inputThree}) {
 
   // Reverse the inputs
-  function reverseInput(str){  
+  function reverseInput(input){  
     let reversed = "";      
-     for (let i = str.length - 1; i >= 0; i--){         
-       reversed += str[i];  
+     for (let i = input.length - 1; i >= 0; i--){         
+       reversed += input[i];  
      }     
     return reversed;
   }
